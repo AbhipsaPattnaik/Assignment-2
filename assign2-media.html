@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2-media</title>
+    <style>
+         .work{
+            display:grid;
+            grid-auto-flow:row;
+            flex-wrap: nowrap;
+        }
+        #workspace{
+            grid-auto-columns:25px;
+            grid-auto-rows:40px;
+            grid-area:1/1/1/1;
+        }
+        #search{
+            text-align:right;
+            grid-auto-columns: auto;
+            grid-auto-rows:40px;
+            grid-area:1/2/1/14;
+        }
+        .first{
+            font-size: 25px;
+            background-color:violet;
+            border:1px solid rgb(172, 136, 167); 
+            background-color:violet;
+            text-align:center;
+            padding:10px;
+            color:brown;
+
+        }
+        #home{
+            grid-auto-rows:25px;
+            grid-area:2/1/2/1;
+        }
+        #custom{
+            grid-auto-columns:25px;
+            grid-auto-rows:25px;
+            grid-area:3/1/3/1;
+        }
+        #dept{
+            grid-auto-columns:25px;
+            grid-auto-rows:25pqx;
+            grid-area:4/1/4/1;
+        }
+        #med{
+            grid-auto-columns:25px;
+            grid-auto-rows:25px;
+            grid-area:5/1/5/1;
+        }
+        #acc{
+            grid-auto-columns:25px;
+            grid-auto-rows:auto;
+            grid-area:6/1/21/1;
+        }
+        .sec{
+            background-color:violet;
+            font-size:25px;
+            overflow:hidden;
+            border:1px solid  rgb(172, 136, 167); 
+            text-align: center;
+            grid-auto-rows:35px;
+            float:left;
+            color:brown;
+            padding:10px;
+        }
+        .sec:hover{
+            background-color:rgba(217, 232, 15, 0.943);
+        }
+        .anchor{
+            font-size:25px;
+            text-decoration:none;
+            color:brown;
+        }
+        .anchor:hover{
+            color:white;
+        }
+        .fourth{
+            text-align:center;
+            background-color:rgb(252, 185, 62);
+            border:1px solid rgb(166, 117, 25);
+            border-radius:8px;
+            font-weight:bold;
+            font-size:25px;
+            padding:10px;
+        }
+        #images{
+            grid-area:2/2/2/14;
+        }
+        #sub{
+            grid-area:3/2/8/14;
+            margin-left:60px;
+        }
+        table{
+            border-spacing:50px;
+        }
+        td{
+            border:1px solid black;
+            border-radius:8px;
+        }
+        #videos{
+            grid-area:8/2/8/14;
+        }
+        #sub2{
+            grid-area:9/2/12/14;
+            margin-left:60px;
+        }
+        #audios{
+            grid-area:12/2/12/14;
+        }
+        #sub3{
+            grid-area:13/2/17/14;
+            margin-left:60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="work">
+        <div id="workspace" class="first">Workspace</div>
+        <div id="search" class="first">Search in Home</div>
+        <div id="home" class="sec"><a href="assign2-home.html" target="_self" class="anchor">Home</a></div>
+        <div id="custom" class="sec"><a href="assign2-customer.html" target="_self" class="anchor">Customers</a></div>
+        <div id="dept" class="sec"><a href="assign2-dept.html" target="_self"  class="anchor">Departments</a></div>
+        <div id="med" class="sec"><a href="assign2-media.html" target="_self" class="anchor">Media</div>
+        <div id="acc" class="sec"><a href="#" target="_self" class="anchor" style="margin-bottom:0">My Account</a></div>
+        <div id="images" class="fourth">IMAGES</div>
+        <div id="sub">
+            <table>
+                <tr>
+                    <td><img src="/Free-image-icon-png-vector-1516537027.zip" height="150px" width="250px"></img></td>
+                    <td><img src="/Free-image-icon-png-vector-1516537027.zip" height="150px" width="250px"></img></td>
+                    <td><img src="/Free-image-icon-png-vector-1516537027.zip" height="150px" width="250px"></img></td>
+                </tr>
+                <tr>
+                    <td><img src="/images.jpeg" height="150px" width="250px"></img></td>
+                    <td><img src="/images.jpeg" height="150px" width="250px"></img></td>
+                    <td><img src="/images.jpeg" height="150px" width="250px"></img></td>
+                </tr>
+            </table>
+        </div>
+        <div id="videos" class="fourth">VIDEOS</div>
+        <div id="sub2">
+            <table>
+                <tr>
+                    <td><iframe width="250px" height="150px" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=4Ke4Jyj_BbX-XLNL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    <td><iframe width="250px" height="150px" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=4Ke4Jyj_BbX-XLNL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    <td><iframe width="250px" height="150px" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=4Ke4Jyj_BbX-XLNL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+            </table>
+        </div>
+        <div id="audios" class="fourth">AUDIOS</div>
+       <div id="sub3">
+            <table>
+                <td><iframe width="250px" height="150px" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=4Ke4Jyj_BbX-XLNL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><iframe width="250px" height="150px" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=4Ke4Jyj_BbX-XLNL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><iframe width="250px" height="150px" src="https://www.youtube.com/embed/z0n1aQ3IxWI?si=4Ke4Jyj_BbX-XLNL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
